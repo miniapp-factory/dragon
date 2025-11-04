@@ -1,5 +1,7 @@
 import { description, title, url } from "@/lib/metadata";
 import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +38,9 @@ export default function Home() {
     <main className="flex flex-col gap-3 place-items-center px-4">
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
+      <Link href="/quiz">
+        <Button>Start Quiz</Button>
+      </Link>
     </main>
   );
 }
