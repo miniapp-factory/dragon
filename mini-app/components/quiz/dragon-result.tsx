@@ -19,7 +19,7 @@ export default function DragonResult({
       />
       <h2 className="text-2xl font-bold">{dragon.name}</h2>
       <p className="text-center">{dragon.description}</p>
-      <Share />
+      <Share text={`${dragon.name} is my dragon!`} />
     </div>
   );
 }
