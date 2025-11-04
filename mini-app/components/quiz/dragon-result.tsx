@@ -1,7 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Share from "@/components/share";
+import { Share } from "@/components/share";
 import { dragons } from "@/lib/dragons";
 
 export default function DragonResult({
